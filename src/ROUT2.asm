@@ -28,6 +28,11 @@
 \ Check if an alien has hit me
  
 .coll2
+
+;	lovebug invulnerable to collision with alien
+;	jmp check_bomb
+;	lovebug end
+
  LSRA:BCScoll3
  LDAaly,X
  CMPmyy
@@ -116,6 +121,11 @@
 \ Now check if the alien's bombs have hit my ship
  
 .aliensbombs
+
+;	lovebug invulnerability to alien bombs
+;	rts
+;	lovebug end
+
  LDY#almaxbull-1
 .albom1
  STYtemp4+1
